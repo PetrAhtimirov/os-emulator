@@ -34,12 +34,12 @@ rl.on("line", (line) => {
   switch (cmd) {
     case "/start":
       os.simEngine.start();
-      console.log("▶️ Симуляция запущена");
+      console.log("Симуляция запущена");
       break;
 
     case "/stop":
       os.simEngine.stop();
-      console.log("⏸ Симуляция остановлена");
+      console.log("Симуляция остановлена");
       break;
 
     case "/gen":
@@ -76,7 +76,7 @@ rl.on("line", (line) => {
 
     default:
       console.log(
-        "❓ Неизвестная команда:",
+        "Неизвестная команда:",
         cmd,
         "\nВведите /? для списка команд",
       );
